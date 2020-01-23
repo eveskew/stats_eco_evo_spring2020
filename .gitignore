@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.DS_Store
+
+homework/*.pdf
+homework_keys/*
+lab/*.pdf
+lab_keys/*
+lecture_drafts/*
+paperwork/*
+scripts/*
