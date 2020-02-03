@@ -4,10 +4,10 @@
 .Ruserdata
 *.DS_Store
 
+drafts/*
 homework/*.pdf
 homework_keys/*
 lab/*.pdf
 lab_keys/*
-lecture_drafts/*
 paperwork/*
 scripts/*
