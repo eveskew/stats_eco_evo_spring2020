@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ##  Instructor
 
-Evan Eskew (eae2144@columbia.edu); office hours after class or by appointment
+Evan Eskew (evan.eskew@columbia.edu); office hours after class or by appointment
 
 ## Teaching Assistants
 

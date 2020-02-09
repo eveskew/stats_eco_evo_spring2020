@@ -8,6 +8,7 @@ drafts/*
 homework/*.pdf
 homework_keys/*
 lab/*.pdf
+lab/working_directory_demo.Rmd
 lab_keys/*
 paperwork/*
 scripts/*
