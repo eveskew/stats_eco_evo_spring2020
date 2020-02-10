@@ -211,7 +211,7 @@ ggplot(data = iris,
 # other words, we generate mini-plots for each value
 # of the categorical variable we're interested in. This 
 # is a good way to visually compare the same data
-# across groups. The easy way to to this is with 
+# across groups. The easy way to do this is with 
 # "facet_wrap()" as a plot element although 
 # "facet_grid()" will allow you to output more 
 # complex panel layouts
