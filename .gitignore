@@ -10,5 +10,8 @@ homework_keys/*
 lab/*.pdf
 lab/working_directory_demo.Rmd
 lab_keys/*
+lecture_drafts/*
+lecture_recordings/*
+miscellaneous/*
 paperwork/*
 scripts/*
