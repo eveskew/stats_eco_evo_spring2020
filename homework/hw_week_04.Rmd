@@ -1,0 +1,54 @@
+---
+title: "EEEB UN3005/GR5005  \nHomework - Week 04 - Due 25 Feb 2020"
+author: "USE THE NUMERIC PORTION OF YOUR UNI HERE"
+output: pdf_document
+fontsize: 12pt
+---
+
+```{r setup, include = FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+**Homework Instructions:** Complete this assignment by writing code in the code chunks provided. If required, provide written explanations below the relevant code chunks. Replace "USE THE NUMERIC PORTION OF YOUR UNI HERE" in the document header with the numbers appearing in your UNI. When complete, knit this document within RStudio to generate a PDF file. Please review the resulting PDF to ensure that all content relevant for grading (i.e., code, code output, and written explanations) appears in the document. Rename your PDF document according to the following format: hw_week_04_UNInumbers.pdf. Upload this final homework document to CourseWorks by 5 pm on the due date.
+
+
+## Problem 1 (3 points)
+
+Imagine you're beginning studies in a new field system, focusing on a bacterial pathogen (i.e., disease-causing organism) that infects small mammals. Your pilot sampling efforts find 9 infected animals out of 20 animals sampled. Based on this (admittedly small) sample, you'd like to estimate the proportion of animals that are infected in your study population (you could call this parameter of interest *p*). To estimate this parameter, use grid approximation with 11 grid points to construct a posterior distribution. Assume a flat prior.
+
+Plot your posterior distribution. Note: Using base R (as in the book and lecture code) will be easier here, since it won't require you to organize your grid and posterior vectors into a data frame before plotting.
+
+Based on visual inspection of the posterior plot, which values of the proportion infected parameter have the most posterior support?
+
+```{r}
+
+```
+
+
+## Problem 2 (2 points)
+
+Repeat the previous problem, but now use grid approximation with 101 grid points. Assume a flat prior, and again plot the resulting posterior distribution.
+
+How has the posterior distribution changed as a result of increasing the number of points used in your grid approximation?
+
+```{r}
+
+```
+
+
+## Problem 3 (3 points)
+
+Now consider an alternative scenario: imagine your pilot sampling effort was much more intense and yielded 90 infected animals out of a total sample of 200 animals. Repeat all steps of your analysis from Problem 2 using this alternative set of observed data.
+
+How has the posterior distribution changed from Problem 2 as a result of using this alternative dataset in your grid approximation? Why? It may be helpful to note that the proportion of animals observed infected is actually the same in Problem 2 (9/20 = 0.45) and Problem 3 (90/200 = 0.45)...
+
+```{r}
+
+```
+
+
+## Problem 4 (2 points)
+
+Thus far you have been assuming a flat prior for the proportion infected parameter (i.e., equal prior probability across all potential parameter values). Do you think this is a realistic assumption? What, if anything, do you know about the proportion infected parameter that would allow you to formulate a sensible prior? Where might you gather information with which to inform your choice of prior?
