@@ -1,0 +1,60 @@
+---
+title: "EEEB UN3005/GR5005  \nHomework - Week 05 - Due 03 Mar 2020"
+author: "USE YOUR NAME HERE"
+output: pdf_document
+fontsize: 12pt
+---
+
+```{r setup, include = FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+library(rethinking)
+```
+
+
+**Homework Instructions:** Complete this assignment by writing code in the code chunks provided. If required, provide written explanations **below** the relevant code chunks. Replace "USE THE NUMERIC PORTION OF YOUR UNI HERE" in the document header with the numbers appearing in your UNI. When complete, knit this document within RStudio to generate a PDF file. Please review the resulting PDF to ensure that all content relevant for grading (i.e., code, code output, and written explanations) appears in the document. Rename your PDF document according to the following format: hw_week_05_UNInumbers.pdf. Upload this final homework document to CourseWorks by 5 pm on the due date.
+
+
+## Problem 1 (3 points)
+
+Think back to the research scenario described in last week's homework assignment: you're studying a bacterial pathogen of small mammals, and your initial sampling efforts have found 9 infected animals out of 20 animals sampled. Much like last week, use grid approximation to construct the posterior for the probability of infection parameter (*p*). Use 1,001 points in your grid approximation, and assume a flat prior.
+
+Now, let's take our posterior inference a bit further. Generate 10,000 samples from the posterior distribution of *p*, assigning them to `samples1`. What is the mean value of `samples1`? What is the 90% HPDI of `samples1`?
+
+```{r}
+
+```
+
+
+## Problem 2 (3 points)
+
+Now imagine that by reading through the scientific literature, you find that prevalence of this particular bacterial pathogen in similar small mammal populations has never been reported above 0.5. Use grid approximation to construct a posterior distribution for the probability of infection parameter, but this time use a prior that assumes that the probability of infection must be < 0.5. 
+
+Hint: a prior that is a constant value below *p* = 0.5 and 0 above *p* >= 0.5 is a mathematical representation of this assumption. And you can define such a prior rather easily using an `ifelse()` statement. Look to chapter 2 of the *Statistical Rethinking* text, lecture code, or online resources for examples of `ifelse()` usage to help you.
+
+Generate 10,000 samples from this new posterior distribution (call them `samples2`). What is the mean value of `samples2`? What is the 90% HPDI of `samples2`?
+
+```{r}
+
+```
+
+
+## Problem 3 (3 points)
+
+Using the `dens()` function in the `rethinking` package, plot `samples1` and `samples2` together for visual comparison. You'll need to use `dens()` twice, using the `add = TRUE` argument in your second `dens()` call to allow you to plot the samples overlaid. Using different colors for the two different sets of posterior samples may also help distinguish them visually. That's just another argument in your `dens()` calls (i.e., `col = "red"`). 
+
+However you choose to depict them, using this visual comparison as an aid, how does the posterior represented by `samples2` differ from `samples1`? What difference did the change in prior make?
+
+```{r}
+
+```
+
+
+## Problem 4 (1 points)
+
+Assume that through further research you somehow establish that the "true" probability of infection within your study population is 0.3. Given this was the true probability of infection value, what was the probability of you initially observing 9 infected individuals out of 20 in your pilot study?
+
+```{r}
+
+```
