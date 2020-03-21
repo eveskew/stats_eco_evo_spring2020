@@ -1,6 +1,6 @@
 ---
-title: "|  Introduction to Statistics for\n|  Ecology and Evolutionary Biology\n|  (EEEB UN3005/GR5005)"
-author: "Columbia University - Spring 2020"
+title: "Introduction to Statistics for  \nEcology and Evolutionary Biology  \n(EEEB UN3005/GR5005)"
+author: "Columbia University - Spring 2020  \nUPDATED: 21 March 2020"
 output: pdf_document
 fontsize: 12pt
 urlcolor: blue
@@ -198,7 +198,9 @@ For homework assignments, I encourage you to discuss the problem sets and potent
 
 ## Week 08 (Mar 16) - No Class (Spring Break)
 
-## Week 09 (Mar 23) - Model Selection
+## Week 09 (Mar 23) - No Class (COVID-19 Cancellations)
+
+## Week 10 (Mar 30) - Model Selection
 
 **Required reading:**  
 
@@ -206,23 +208,21 @@ For homework assignments, I encourage you to discuss the problem sets and potent
 
 - Anderson, D. R., and K. P. Burnham. 2002. Avoiding pitfalls when using information-theoretic methods. 
 
-- Bolker, B. M. 2018. "Multimodel approaches are not the best way to understand multifactorial systems." [Article link](https://github.com/bbolker/discretization/blob/master/discrete.pdf)
-
 **Optional reading:**  
 
-- Whittingham, M. J., et al. 2006. Why do we still use stepwise modelling in ecology and behaviour?  
+- Bolker, B. M. 2018. "Multimodel approaches are not the best way to understand multifactorial systems." [Article link](https://github.com/bbolker/discretization/blob/master/discrete.pdf)
 
 - McGill, B. 2015. "Why AIC appeals to ecologist's lowest instincts." *Dynamic Ecology*. [Article link](https://dynamicecology.wordpress.com/2015/05/21/why-aic-appeals-to-ecologists-lowest-instincts/) (And be sure to see the many interesting comments.)
 
-## Week 10 (Mar 30) - Interactions
+**EEEB GR5005 Students: Research project rough drafts due Apr 02**
+
+## Week 11 (Apr 06) - Interactions
 
 **Required reading:**  
 
 - *Statistical Rethinking*: Chapter 7 
 
-**EEEB GR5005 Students: Research project rough drafts due Apr 02**
-
-## Week 11 (Apr 06) - Link Functions and Poisson Regression
+## Week 12 (Apr 13) - Link Functions and Poisson Regression
 
 **Required reading:**  
 
@@ -232,9 +232,9 @@ For homework assignments, I encourage you to discuss the problem sets and potent
 
 - *Statistical Rethinking*: Chapter 8  
 
-## Week 12 (Apr 13) - Binomial Regression
+## Week 13 (Apr 20) - Binomial Regression
 
-## Week 13 (Apr 20) - Introduction to Multilevel Modeling
+## Week 14 (Apr 27) - Introduction to Multilevel Modeling
 
 **Required reading:**  
 
@@ -242,19 +242,13 @@ For homework assignments, I encourage you to discuss the problem sets and potent
 
 - *Statistical Rethinking*: Chapter 12  
 
-## Week 14 (Apr 27) - More Multilevel Modeling
+**EEEB GR5005 Students: Research projects due Apr 30**
+
+## Week 15 (May 04) - More Multilevel Modeling
 
 **Required reading:**  
 
 - Bolker, B. M., et al. 2009. Generalized linear mixed models: a practical guide for ecology and evolution. 
-
-**EEEB GR5005 Students: Research projects due Apr 30**
-
-## Week 15 (May 04) - The Wide World of Statistical Models
-
-**Required reading:**  
-
-- *Statistical Rethinking*: Chapter 11  
 
 **Optional reading:**
 
