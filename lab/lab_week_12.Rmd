@@ -1,0 +1,52 @@
+---
+title: "EEEB UN3005/GR5005  \nLab - Week 12 - 13 and 15 April 2020"
+author: "USE YOUR NAME HERE"
+output: pdf_document
+fontsize: 12pt
+---
+
+```{r setup, include = FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+library(rethinking)
+library(dplyr)
+library(ggplot2)
+```
+
+
+**Updated Lab Instructions Due to Remote Teaching:** Complete this assignment by writing code in the code chunks provided. If required, provide written explanations below the relevant code chunks. When complete, knit this document within RStudio to generate a PDF, and upload that document to CourseWorks by 5 pm on 16 April.
+
+
+# Link Functions and Poisson Regression
+
+
+## Exercise 1: Importing and Visualizing the Kline Dataset
+
+Import the Kline dataset that was shown in the *Statistical Rethinking* text and lecture. Add a log population size variable (`log_pop`) to the data frame for use as a predictor variable. Now, visualize the relationship between `log_pop` and `total_tools` using a scatter plot in `ggplot()`. Make the x-axis limits of your plot span from 0 to 15 and the y-axis limits of your plot span from 0 to 80. In addition, add the layer `geom_smooth(method = "lm", se = FALSE, fullrange = TRUE)` to your plot in order to display a linear trend line on top of the raw data.
+
+```{r}
+
+```
+
+
+## Exercise 2: Fitting a Poisson GLM and a Standard Linear Model
+
+First, fit a Poisson GLM to the Kline data (with `map()`), using `log_pop` as a predictor of total tool count. This model should replicate m10.12 from the *Statistical Rethinking* book, so reference the text if needed. After fitting the model, use `precis()` to display the 97% PIs for all model parameters.
+
+Now, fit a standard linear model (with a Gaussian outcome distribution) to the Kline data, again using `log_pop` as a predictor of total tool count. Use the following priors: `dnorm(-50, 10)` for the intercept parameter,  `dnorm(0, 10)` for the beta coefficient for `log_pop`, and `dunif(0, 10)` for the standard deviation parameter. Use `precis()` to display the 97% PIs for all model parameters after you've fit the model.
+
+```{r}
+
+```
+ 
+ 
+## Exercise 3: Comparing Model-based Predictions
+
+Imagine we discover a new Oceanic island with a population of 150 people (log population size of 5.01). Using `sim()`, generate predictions for total tool count on this island for both the Poisson GLM and the standard linear model. Output some of the predictions from each model (using `head()`, for example) just to see what they look like, and report the mean value of the predictions generated from both models. 
+
+Which model suggests a higher total tool count for this hypothetical island? Do you think both of these models generate sensible predictions for total tool count? Why or why not?
+
+```{r}
+
+```
