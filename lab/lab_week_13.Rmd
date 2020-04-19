@@ -1,0 +1,50 @@
+---
+title: "EEEB UN3005/GR5005  \nLab - Week 13 - 20 and 22 April 2020"
+author: "USE YOUR NAME HERE"
+output: pdf_document
+fontsize: 12pt
+---
+
+```{r setup, include = FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+library(rethinking)
+```
+
+
+**Updated Lab Instructions Due to Remote Teaching:** Complete this assignment by writing code in the code chunks provided. If required, provide written explanations below the relevant code chunks. When complete, knit this document within RStudio to generate a PDF, and upload that document to CourseWorks by 5 pm on 23 April.
+
+
+# Binomial Regression
+
+
+## Exercise 1: Fitting a Binomial Generalized Linear Model
+
+On the class CourseWorks page, you'll find a dataset called `eagles.csv`. This dataset summarizes observations of salmon foraging interactions by bald eagles in the western United States. More specifically, when one eagle (the victim) is trying to feed, another eagle (the pirate) may try to steal the catch. The `eagles.csv` data records the number of successful thieving events by the pirate eagle (`successes`) given a total number of thieving attempts (`total_attempts`). In addition, there is information on the specifics of the eagle interaction including size of the pirating eagle, age of the pirating eagle, and size of the victim eagle.
+
+Import the `eagles.csv` data, and fit a binomial generalized linear with `successes` as the outcome variable and `pirate_size` and `victim_size` as predictor variables. Note, you'll need to create dummy predictor variables for `pirate_size` and `victim_size` for use in your model. To do so, 1) make a new variable called `pirate_large` that is equal to 1 when the pirate eagle is large, and 2) make a new variable called `victim_large` that is equal to 1 when the victim eagle is large. Fit your model using `map()` and priors of `dnorm(0, 10)` for the intercept parameter and `dnorm(0, 5)` for the beta coefficients. After fitting your model, report the 97% PI for all model parameters.
+
+```{r}
+
+```
+
+
+## Exercise 2: Visualizing the Model Intercept and the Implied Probability of Success
+
+Extract 10,000 posterior samples from your fit model and visualize the intercept parameter samples using `dens()`. What type of eagle interaction (i.e., combination of large/small pirate and victim) does the intercept value correspond to?
+
+Note, however, that the intercept parameter samples are not on the probability scale. They do not lie between 0 and 1. Can you report the 97% HPDI for the probability of success (i.e., probability of thieving) values that these intercept parameter samples imply? As a hint, this will involve reversing the link function that is used in fitting the generalized linear model. Similarly, visualize these implied probability of success values using `dens()`.
+
+```{r}
+
+```
+
+
+## Exercise 3: Plotting Implied Probability of Success Values for All Pirate-Victim Combinations
+
+Now extend the ideas you just implemented in Exercise 2 to use `dens()` to plot implied probability of success values for all pirate-victim size combinations. Rather than generating these implied values yourself manually, you can define counterfactual datasets and let `link()` generate the implied values for you. After you've generated implied probability of success values for all pirate-victim combinations, the plotting should be straightforward.
+
+```{r}
+
+```
