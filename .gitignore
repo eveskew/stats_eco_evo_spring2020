@@ -5,6 +5,7 @@
 *.DS_Store
 
 drafts/*
+final_exam/*
 homework/*.pdf
 homework_keys/*
 lab/*.pdf
@@ -14,4 +15,5 @@ lecture_drafts/*
 lecture_recordings/*
 miscellaneous/*
 paperwork/*
+readings/*
 scripts/*

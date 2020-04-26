@@ -1,0 +1,59 @@
+---
+title: "EEEB UN3005/GR5005  \nHomework - Week 14 - Due 05 May 2020"
+author: "USE THE NUMERIC PORTION OF YOUR UNI HERE"
+output: pdf_document
+fontsize: 12pt
+---
+
+```{r setup, include = FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+library(rethinking)
+library(dplyr)
+```
+
+
+**Homework Instructions:** Complete this assignment by writing code in the code chunks provided. If required, provide written explanations **below** the relevant code chunks. Replace "USE THE NUMERIC PORTION OF YOUR UNI HERE" in the document header with the numbers appearing in your UNI. When complete, knit this document within RStudio to generate a PDF file. Please review the resulting PDF to ensure that all content relevant for grading (i.e., code, code output, and written explanations) appears in the document. Rename your PDF document according to the following format: hw_week_14_UNInumbers.pdf. Upload this final homework document to CourseWorks by 5 pm on the due date.
+  
+  
+This week's homework problems will use a historical human ecology/demography dataset from 1988 on nearly 2,000 Bangladeshi women. Access this dataset, which includes information on the women's households and behavior, from the `rethinking` package using `data("bangladesh")`.
+
+
+## Problem 1 (2 points)
+
+Import the `bangladesh` data and **filter the data to only contain information on women from administrative districts 1 through 50 (the `district` variable).** Use this filtered dataset for all problems in this assignment. If you don't, you're sure to run into some modeling trouble.
+
+First, fit a binomial generalized linear model using `district` to predict a woman's decision to use contraception (the `use.contraception` variable). Note, treating `district` as an index variable to generate a vector of intercept parameters (one corresponding to each district) will be the most effective approach here. Use a prior of `dnorm(0, 5)` for your intercept parameters.
+
+After fitting the model, use `precis()` to report the 97% PIs of the fit model parameters.
+
+```{r}
+
+```
+
+
+## Problem 2 (4 points)
+
+Now, formulate and fit this same model as a multilevel binomial generalized linear model. Use a prior of `dnorm(0, 5)` for the mean of your cluster of intercepts and a prior of `dcauchy(0, 1)` for the standard deviation of your cluster of intercepts. Don't worry about any warning messages you may receive regarding divergent iterations during sampling.
+
+After fitting the model, use `precis()` to report the 97% HPDIs of the fit model parameters. 
+
+Using posterior samples from the model, visualize the implied probability of contraception use for a woman occupying an *average* district.
+
+```{r}
+
+```
+
+
+## Problem 3 (4 points)
+
+Adapt the model you constructed in Problem 2 to also consider the impact of whether or not a woman lives in an urban area as a predictor for contraception use. Note, `urban` is already a dummy variable, with a value of 1 indicating a woman who lives in a city and a value of 0 indicating a woman who lives in a rural area. Use a prior of `dnorm(0, 5)` for your beta coefficient for contraception use.
+
+After fitting the new model, use `precis()` to report the 97% HPDIs of the fit model parameters. 
+
+Interpret the urban living effect. Based on this dataset and model, are urban women more or less likely to use contraception?
+
+```{r}
+
+```
